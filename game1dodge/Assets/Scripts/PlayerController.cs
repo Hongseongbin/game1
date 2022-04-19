@@ -10,7 +10,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         playerRigid = GetComponent<Rigidbody>();
-        speed = 8;
+        speed = 8f;
 
     }
 
