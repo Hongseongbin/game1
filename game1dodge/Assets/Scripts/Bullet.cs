@@ -25,7 +25,7 @@ public class Bullet : MonoBehaviour
             PlayerController playerController = GetComponent<PlayerController>();
 
             //실수를대비해 코드를 견고하게 만듦(충돌상대에 PlayerController가 없을경우 에러)
-            if(playerController != null)
+            //if(playerController != null)
             {
                 playerController.Die();
             }
