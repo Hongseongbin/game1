@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    private Rigidbody playerRigid;
+    public Rigidbody playerRigid;
     public float speed;
 
     void Start()
     {
-        playerRigid = GetComponent<Rigidbody>();
+        //playerRigid = GetComponent<Rigidbody>();
         speed = 8f;
 
     }
@@ -31,5 +31,8 @@ public class PlayerController : MonoBehaviour
     {
         gameObject.SetActive(false);
         Debug.Log("GameOver");
+
+        GameManager gameManager = FindObjectOfType<GameManager>();
+        gameManager.EndGame();
     }
 }
